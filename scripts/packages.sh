@@ -46,20 +46,45 @@ UPDATE_PACKAGE() {
 
 # UPDATE_PACKAGE "包名" "项目地址" "项目分支" "pkg/name，可选，pkg为从大杂烩中单独提取包名插件；name为重命名为包名"
 UPDATE_PACKAGE "argon" "chingjyu/luci-theme-argon" "main"
-
-UPDATE_PACKAGE "homeproxy" "immortalwrt/homeproxy" "master"
-UPDATE_PACKAGE "nikki" "nikkinikki-org/OpenWrt-nikki" "main"
-UPDATE_PACKAGE "momo" "nikkinikki-org/OpenWrt-momo" "main"
-UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
-UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
-UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main" "pkg"
-
-UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
-UPDATE_PACKAGE "openlist" "sbwml/luci-app-openlist" "main"
-UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
-UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
+UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
+
+
 UPDATE_PACKAGE "vnt" "lmq8267/luci-app-vnt" "main"
+
+
+
+#UPDATE_PACKAGE "argon" "xinruoyusixian/alan-package" "main" "pkg" #自定义主题插件
+
+#流量监控插件
+UPDATE_PACKAGE "luci-app-bandix" "timsaya/luci-app-bandix" "main" 
+UPDATE_PACKAGE "bandix" "timsaya/openwrt-bandix" "main"
+
+UPDATE_PACKAGE "luci-app-taskplan" "xinruoyusixian/alan-package" "main" "pkg"   
+UPDATE_PACKAGE "luci-app-nft-timecontrol" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-eqosplus" "xinruoyusixian/alan-package" "main"  "pkg"
+
+UPDATE_PACKAGE "luci-app-watchdog" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "watchdog" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-unishare" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-ddnsto" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "ddnsto" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "unishare" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "webdav2" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "luci-app-wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "wrtbwmon" "xinruoyusixian/alan-package" "main" "pkg"
+
+UPDATE_PACKAGE "quickfile" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "luci-app-quickfile" "xinruoyusixian/alan-package" "main" "pkg"
+
+
+UPDATE_PACKAGE "luci-app-adguardhome" "xinruoyusixian/alan-package" "main" "pkg"
+UPDATE_PACKAGE "adguardhome" "xinruoyusixian/alan-package" "main" "pkg"
 
 #更新软件包版本
 UPDATE_VERSION() {
