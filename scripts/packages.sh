@@ -48,6 +48,7 @@ UPDATE_PACKAGE() {
 
 #UPDATE_PACKAGE "argon" "chingjyu/luci-theme-argon" "main"
 #UPDATE_PACKAGE "qmodem" "FUjr/QModem" "main"
+UPDATE_PACKAGE "argon" "chingjyu/luci-theme-argon" "main"
 
 
 
