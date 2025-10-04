@@ -168,7 +168,7 @@ jobs:
           #暂时还没有需要删除的
           #rm -rf feeds/alanPackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
           #这里不需要因为是一样的
-          rm -rf feeds/alanPackage/{luci-theme-argon}
+          #rm -rf feeds/alanPackage/{luci-theme-argon}
           
       - name: Custom Packages
         run: |
