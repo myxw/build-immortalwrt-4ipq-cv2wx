@@ -143,13 +143,33 @@ jobs:
             echo "caches cleanup done!"
           fi
 
+
+
+      #在 Clone Code 之后，Update Feeds 之前
+      - name: 增加alanPackage自己的源
+        run: |
+          cd ./wrt/
+          echo "src-git alanPackage https://github.com/xinruoyusixian/alan-package" >> feeds.conf.default
+
+
+
       - name: Update Feeds
         run: |
           cd ./wrt/
-
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
+
+
+       #在 Update Feeds 步骤下面直接加一段
+      - name: 删除alanPackage不要的
+        run: |
+          cd ./wrt/
+          #暂时还没有需要删除的
+          #rm -rf feeds/alanPackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+          #这里不需要因为是一样的
+          rm -rf feeds/alanPackage/{luci-theme-argon}
+          
       - name: Custom Packages
         run: |
           cd ./wrt/package/
